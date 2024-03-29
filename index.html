@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>롬앤</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/middle.css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: "true",
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="in_header">
+          <div id="leftmenu_wrap">
+            <div class="menu_btn mobile">
+              <a href="#">
+                <img src="img/menu_mobile.png" alt="메뉴" />
+              </a>
+            </div>
+            <div id="logo">
+              <a href="#">
+                <img src="img/logo.png" alt="로고" />
+              </a>
+            </div>
+            <ul id="menu_wrap" class="mobileX">
+              <li><a href="#">PRODUCT</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">REVIEW</a></li>
+              <li><a href="#">COMMUNITY</a></li>
+              <li><a href="#">BRAND</a></li>
+            </ul>
+            <div id="cart_btn" class="mobile">
+              <a href="#">
+                <img src="img/icon_cart_pc.png" alt="장바구니" />
+              </a>
+            </div>
+          </div>
+          <ul id="rightmenu_wrap" class="mobileX">
+            <li class="right_icon">
+              <a href="#">
+                <img src="img/icon_profil_pc.png" alt="프로필" />
+              </a>
+            </li>
+            <li class="right_icon">
+              <a href="#">
+                <img src="img/icon_cart_pc.png" alt="장바구니" />
+              </a>
+            </li>
+            <li class="right_icon">
+              <a href="#">
+                <img src="img/icon_search_pc.png" alt="검색" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section id="section01">
+        <div class="sec01_main">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/banner01.jpg"
+                  alt="배너이미지"
+                  class="pc middle"
+                />
+                <img src="img/banner01_tab.jpg" alt="배너이미지" class="tab" />
+                <img
+                  src="img/banner01_mobile.png"
+                  alt="배너이미지"
+                  class="mobile"
+                />
+                <div class="banner_txtbox">
+                  <p>한 끗 차이로 달라지는 브로우 터치</p>
+                  <h2>NEW 한올 브로우 카라</h2>
+                  <div class="moreBtn">
+                    <p>자세히 보러가기</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/banner02.jpg"
+                  alt="배너이미지"
+                  class="pc middle"
+                />
+                <img src="img/banner02_tab.jpg" alt="배너이미지" class="tab" />
+                <img
+                  src="img/banner02_mobile.png"
+                  alt="배너이미지"
+                  class="mobile"
+                />
+                <div class="banner_txtbox">
+                  <p>그리는 데까지가 내 입술, 롬앤의 오버립 프로젝트</p>
+                  <h2>롬앤 립 메이트 펜슬</h2>
+                  <div class="moreBtn">
+                    <p>자세히 보러가기</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/banner03.jpg"
+                  alt="배너이미지"
+                  class="pc middle"
+                />
+                <img src="img/banner03_tab.jpg" alt="배너이미지" class="tab" />
+                <img
+                  src="img/banner03_mobile.png"
+                  alt="배너이미지"
+                  class="mobile"
+                />
+                <div class="banner_txtbox">
+                  <p>볼드하게 터지는 누디 밤</p>
+                  <h2>롬앤 글래스팅 멜팅 밤</h2>
+                  <div class="moreBtn">
+                    <p>자세히 보러가기</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/banner04.png"
+                  alt="배너이미지"
+                  class="pc middle"
+                />
+                <img src="img/banner04_tab.png" alt="배너이미지" class="tab" />
+                <img
+                  src="img/banner04_mobile.png"
+                  alt="배너이미지"
+                  class="mobile"
+                />
+                <div class="banner_txtbox">
+                  <p>만져보고 싶은 매끈한 피부결</p>
+                  <h2>롬앤 누 제로 쿠션</h2>
+                  <div class="moreBtn">
+                    <p>자세히 보러가기</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="section02">
+        <div class="section_wrap">
+          <h1 class="sec_title">BEST</h1>
+          <div class="container_wrap">
+            <div class="con">
+              <div class="con_img" id="best01"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
+              <p class="con_preprice"><a href="#">13000원</a></p>
+              <p class="con_aftprice"><a href="#">8400원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="best02"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 한올 플랫 브로우</a></p>
+              <p class="con_preprice"><a href="#">11000원</a></p>
+              <p class="con_aftprice"><a href="#">7900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="best03"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 글래스팅 멜팅 밤</a></p>
+              <p class="con_preprice"><a href="#">13000원</a></p>
+              <p class="con_aftprice"><a href="#">9900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="best04"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 글래스팅 워터 글로스</a></p>
+              <p class="con_preprice"><a href="#">13000원</a></p>
+              <p class="con_aftprice"><a href="#">8900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section03">
+        <div class="section_wrap">
+          <h1 class="sec_title">NEW</h1>
+          <div class="container_wrap">
+            <div class="con">
+              <div class="con_img" id="new01"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
+              <p class="con_preprice"><a href="#">13000원</a></p>
+              <p class="con_aftprice"><a href="#">8400원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="new02"><a href="#"></a></div>
+              <p class="con_title" id="con02_title">
+                <a href="#"
+                  >롬앤X오리온<br />
+                  과일에서 갓 따온 속살시리즈<br />
+                  #베어세트</a
+                >
+              </p>
+              <p class="con_preprice"><a href="#">42000원</a></p>
+              <p class="con_aftprice"><a href="#">28900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="new03"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 백미 톤업 선쿠션</a></p>
+              <p class="con_preprice"><a href="#">18000원</a></p>
+              <p class="con_aftprice"><a href="#">14900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+            <div class="con">
+              <div class="con_img" id="new04"><a href="#"></a></div>
+              <p class="con_title"><a href="#">롬앤 한올 브로우 카라</a></p>
+              <p class="con_preprice"><a href="#">12000원</a></p>
+              <p class="con_aftprice"><a href="#">8900원</a></p>
+              <div class="viewmore_wrap">
+                <span class="viewmore"><a href="#">자세히보기</a></span>
+                <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section04">
+        <div class="section_wrap02">
+          <div class="sec04">
+            <iframe
+              width="1600"
+              height="900"
+              src="https://www.youtube-nocookie.com/embed/xlOfK8iBuMA"
+              title="romand"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="pc"
+              style="width: 100%; object-fit: cover"
+            ></iframe>
+            <iframe
+              width="1200"
+              height="676"
+              src="https://www.youtube-nocookie.com/embed/xlOfK8iBuMA"
+              title="romand"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="middle"
+              style="width: 100%; object-fit: cover"
+            ></iframe>
+            <iframe
+              width="820"
+              height="462"
+              src="https://www.youtube-nocookie.com/embed/xlOfK8iBuMA"
+              title="romand"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="mobile"
+              style="width: 100%; object-fit: cover"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="section05">
+        <div class="section_wrap02" id="section_wrap_md">
+          <h1 class="sec_title">NEWS & EVENT</h1>
+          <div class="container_wrap02" id="container_wrap02_md">
+            <div class="con02">
+              <div class="con02_img">
+                <a href="#"><img src="img/event01_pc.png" alt="event01" /></a>
+              </div>
+              <p class="con02_txt">
+                <a href="#">롬앤X오리온 BARE SET 속살후기 EVENT</a>
+              </p>
+            </div>
+            <div class="con02">
+              <div class="con02_img">
+                <a href="#"><img src="img/event02_pc.png" alt="event02" /></a>
+              </div>
+              <p class="con02_txt">
+                <a href="#">롬앤X오리온 역대급 말랑한 콜라보 COMING SOON!</a>
+              </p>
+            </div>
+            <div class="con02 pc">
+              <div class="con02_img pc">
+                <a href="#"><img src="img/event03_pc.png" alt="event03" /></a>
+              </div>
+              <p class="con02_txt pc">
+                <a href="#">롬앤 청과 GRAND OPEN! 올리브영 강남 타운점</a>
+              </p>
+            </div>
+            <div class="con02 mobile" id="con02_mo">
+              <div class="con02_img mobile">
+                <a href="#"><img src="img/event03_pc.png" alt="event03" /></a>
+              </div>
+              <p class="con02_txt mobile">
+                <a href="#">롬앤 청과 GRAND OPEN! 올리브영 강남 타운점</a>
+              </p>
+            </div>
+          </div>
+          <div class="viewmore_wrap02 middle">
+            <span class="viewmore02 middle"><a href="#">더보기</a></span>
+            <img
+              class="viewmore_btn02 middle"
+              src="img/icon_arrow_price_pc.png"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="section06">
+        <div class="section_wrap02" id="section_wrap_md">
+          <h1 class="sec_title">BEST REVIEW</h1>
+          <div class="container_wrap03">
+            <div class="con03_midwrap">
+              <div class="con03">
+                <div class="con03_img">
+                  <a href="#"
+                    ><img src="img/review01_pc.png" alt="review01"
+                  /></a>
+                </div>
+                <p class="con03_txt">
+                  속보이게 투명한 제형의 신박한 매트! <br class="mobileX" />
+                  시스루 매트 틴트 전색상 발색
+                </p>
+              </div>
+              <div class="con03">
+                <div class="con03_img">
+                  <a href="#"
+                    ><img src="img/review02_pc.png" alt="review02"
+                  /></a>
+                </div>
+                <p class="con03_txt">
+                  ✨영롱보스 롬앤 더 유니버스 글리터섀도우<br class="mobileX" />
+                  & 리퀴드글리터 발색리뷰
+                </p>
+              </div>
+            </div>
+            <div class="con03_midwrap">
+              <div class="con03">
+                <div class="con03_img">
+                  <a href="#"
+                    ><img src="img/review03_pc.png" alt="review03"
+                  /></a>
+                </div>
+                <p class="con03_txt">
+                  장인과 장인이 만났습니다! 베러 댄 씨리얼 후기
+                </p>
+              </div>
+              <div class="con03">
+                <div class="con03_img">
+                  <a href="#"
+                    ><img src="img/review04_pc.png" alt="review04"
+                  /></a>
+                </div>
+                <p class="con03_txt">제로쿠션 신호수 출시! 찰떡컬러 가이드</p>
+              </div>
+            </div>
+          </div>
+          <div class="viewmore_wrap02">
+            <span class="viewmore02"><a href="#">더보기</a></span>
+            <img class="viewmore_btn02" src="img/icon_arrow_price_pc.png" />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="up_footer section_wrap03">
+          <ul class="foot01 mobileX">
+            <li class="loginbtn middle"><a href="#">로그인</a></li>
+            <li class="loginbtn middle"><a href="#">회원가입</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">오프라인 매장 찾기</a></li>
+            <li><a href="#">온라인 멤버쉽</a></li>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">커뮤니티</a></li>
+          </ul>
+          <div class="foot02">
+            <p>롬앤 고객센터</p>
+            <h2>1670-2238</h2>
+            <p>Mon-Fri. 10:00 ~ 17:00</p>
+            <p>Lunch. 12:20 ~ 13:30</p>
+            <p>토,일 공휴일 휴무</p>
+          </div>
+          <div class="foot03">
+            <p>마케팅/제휴문의</p>
+            <p id="br" class="mobile">romandyou@romand.co.kr</p>
+            <div class="foot03_line mobileX"></div>
+            <p>해외 수출 문의</p>
+            <p>export@romand.co.kr</p>
+          </div>
+          <div class="foot_sns">
+            <div class="foot_icon">
+              <a href="#"><img src="img/icon_youtube_pc.png" alt="유튜브" /></a>
+            </div>
+            <div class="foot_icon">
+              <a href="#"
+                ><img src="img/icon_insta_pc.png" alt="인스타그램"
+              /></a>
+            </div>
+            <div class="foot_icon">
+              <a href="#"><img src="img/icon_blog_pc.png" alt="블로그" /></a>
+            </div>
+            <div class="foot_icon">
+              <a href="#"
+                ><img src="img/icon_facebook_pc.png" alt="페이스북"
+              /></a>
+            </div>
+            <div class="foot_icon">
+              <a href="#"><img src="img/icon_kakao_pc.png" alt="카카오톡" /></a>
+            </div>
+            <div class="login_wrap pc">
+              <p class="login pc"><a href="#">로그인</a></p>
+              <p class="pc"><a href="#">회원가입</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footerline"></div>
+        <div class="down_footer section_wrap03">
+          <p>(주)아이패밀리SC</p>
+          <p>서울특별시 송파구 동남로 122(문정동) COLLECTED 빌딩</p>
+          <ul class="downfoot01">
+            <li><p>Tel : 02.1670.2238</p></li>
+            <li><p>Fax : 02.6910.4111</p></li>
+            <li><p>사업자등록번호 : 120-86-00633</p></li>
+          </ul>
+          <ul class="downfoot01">
+            <li><p>통신판매신고번호 : 제2022-서울송파-1690호</p></li>
+            <li><p>대표자 : 김태욱,김성현</p></li>
+          </ul>
+          <ul class="downfoot01" id="downfoot01_03">
+            <li>
+              <p><a href="#">개인정보보호정책</a></p>
+            </li>
+            <li>
+              <p><a href="#">이용약관동의</a></p>
+            </li>
+          </ul>
+          <p>© 2017 IFAMILY SC, CO., LTD.All Right Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
