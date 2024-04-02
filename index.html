@@ -36,6 +36,13 @@
           delay: 5000,
         },
       });
+
+      const swiper_2 = new Swiper(".swiper_2", {
+        slidesPerView: 2.5,
+        centeredSlides: false,
+        spaceBetween: 30,
+        slideToClickedSlide: true,
+      });
     </script>
   </head>
   <body>
@@ -90,11 +97,8 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img
-                  src="img/banner01.jpg"
-                  alt="배너이미지"
-                  class="pc middle"
-                />
+                <img src="img/banner01.jpg" alt="배너이미지" class="pc" />
+                <img src="img/banner01.jpg" alt="배너이미지" class="middle" />
                 <img src="img/banner01_tab.jpg" alt="배너이미지" class="tab" />
                 <img
                   src="img/banner01_mobile.png"
@@ -110,11 +114,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img
-                  src="img/banner02.jpg"
-                  alt="배너이미지"
-                  class="pc middle"
-                />
+                <img src="img/banner02.jpg" alt="배너이미지" class="pc" />
+                <img src="img/banner02.jpg" alt="배너이미지" class="middle" />
                 <img src="img/banner02_tab.jpg" alt="배너이미지" class="tab" />
                 <img
                   src="img/banner02_mobile.png"
@@ -130,11 +131,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img
-                  src="img/banner03.jpg"
-                  alt="배너이미지"
-                  class="pc middle"
-                />
+                <img src="img/banner03.jpg" alt="배너이미지" class="pc" />
+                <img src="img/banner03.jpg" alt="배너이미지" class="middle" />
                 <img src="img/banner03_tab.jpg" alt="배너이미지" class="tab" />
                 <img
                   src="img/banner03_mobile.png"
@@ -150,11 +148,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img
-                  src="img/banner04.png"
-                  alt="배너이미지"
-                  class="pc middle"
-                />
+                <img src="img/banner04.png" alt="배너이미지" class="pc" />
+                <img src="img/banner04.png" alt="배너이미지" class="middle" />
                 <img src="img/banner04_tab.png" alt="배너이미지" class="tab" />
                 <img
                   src="img/banner04_mobile.png"
@@ -177,7 +172,7 @@
       <section id="section02">
         <div class="section_wrap">
           <h1 class="sec_title">BEST</h1>
-          <div class="container_wrap">
+          <div class="container_wrap" id="sec2_nomobile">
             <div class="con">
               <div class="con_img" id="best01"><a href="#"></a></div>
               <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
@@ -219,12 +214,58 @@
               </div>
             </div>
           </div>
+          <div class="swiper_2" id="sec2_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="con_img" id="best01"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
+                <p class="con_preprice"><a href="#">13000원</a></p>
+                <p class="con_aftprice"><a href="#">8400원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="best02"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 한올 플랫 브로우</a></p>
+                <p class="con_preprice"><a href="#">11000원</a></p>
+                <p class="con_aftprice"><a href="#">7900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="best03"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 글래스팅 멜팅 밤</a></p>
+                <p class="con_preprice"><a href="#">13000원</a></p>
+                <p class="con_aftprice"><a href="#">9900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="best04"><a href="#"></a></div>
+                <p class="con_title">
+                  <a href="#">롬앤 글래스팅 워터 글로스</a>
+                </p>
+                <p class="con_preprice"><a href="#">13000원</a></p>
+                <p class="con_aftprice"><a href="#">8900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="section03">
         <div class="section_wrap">
           <h1 class="sec_title">NEW</h1>
-          <div class="container_wrap">
+          <div class="container_wrap" id="sec2_nomobile">
             <div class="con">
               <div class="con_img" id="new01"><a href="#"></a></div>
               <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
@@ -270,6 +311,57 @@
                 <span class="viewmore"><a href="#">자세히보기</a></span>
                 <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
               </div>
+            </div>
+          </div>
+          <div class="swiper_2" id="sec2_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="con_img" id="new01"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 쥬시 래스팅 틴트</a></p>
+                <p class="con_preprice"><a href="#">13000원</a></p>
+                <p class="con_aftprice"><a href="#">8400원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="new02"><a href="#"></a></div>
+                <p class="con_title" id="con02_title">
+                  <a href="#"
+                    >롬앤X오리온<br />
+                    과일에서 갓 따온 속살시리즈<br />
+                    #베어세트</a
+                  >
+                </p>
+                <p class="con_preprice"><a href="#">42000원</a></p>
+                <p class="con_aftprice"><a href="#">28900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="new03"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 백미 톤업 선쿠션</a></p>
+                <p class="con_preprice"><a href="#">18000원</a></p>
+                <p class="con_aftprice"><a href="#">14900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="con_img" id="new04"><a href="#"></a></div>
+                <p class="con_title"><a href="#">롬앤 한올 브로우 카라</a></p>
+                <p class="con_preprice"><a href="#">12000원</a></p>
+                <p class="con_aftprice"><a href="#">8900원</a></p>
+                <div class="viewmore_wrap">
+                  <span class="viewmore"><a href="#">자세히보기</a></span>
+                  <img class="viewmore_btn" src="img/icon_arrow_price_pc.png" />
+                </div>
+            </div>
+          </div>
             </div>
           </div>
         </div>
